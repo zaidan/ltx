@@ -4,7 +4,7 @@
 guard :bundler do
   watch('Gemfile')
   watch('Gemfile.lock')
-  # watch(%w{.+.gemspec\z})
+  watch(/\A(.+)\.gemspec\z/)
 end
 
 guard :rspec, cmd: 'bundle exec rspec ' +
@@ -37,7 +37,7 @@ guard :rspec, cmd: 'bundle exec rspec ' +
 end
 
 guard :rubocop, cli: %w(--config config/rubocop.yml) do
-  watch(/.+\.(?:rb|rake)\z/)
+  watch(/.+\.(?:rb|rake|gemspec)\z/)
   watch(%r{\Aconfig/rubocop\.yml\z})  { |m| File.dirname(m[0]) }
   watch(%r{(?:.+/)?\.rubocop\.yml\z}) { |m| File.dirname(m[0]) }
 end
