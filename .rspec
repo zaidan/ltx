@@ -1,0 +1,6 @@
+--color
+--fail-fast
+--format progress
+--profile
+--order random
+--require spec_helper

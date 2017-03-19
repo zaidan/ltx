@@ -1,0 +1,5 @@
+AllCops:
+  Exclude: []
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
