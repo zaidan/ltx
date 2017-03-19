@@ -1,4 +1,10 @@
+[gem]: https://rubygems.org/gems/ltx
+[gemnasium]: https://gemnasium.com/zaidan/ltx
+
 # ltx - LaTeX Project Build Tool
+
+[![Gem Version](https://badge.fury.io/rb/ltx.svg)][gem]
+[![Dependency Status](https://gemnasium.com/zaidan/ltx.svg)][gemnasium]
 
 This project provides the ltx command. It reads your `project.yml` and
 compiles your LaTeX files to a tmp folder in your project subdirectory.  This
