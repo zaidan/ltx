@@ -25,9 +25,9 @@ Gem::Specification.new do |gem|
   gem.required_ruby_version = '>= 2.2'
 
   gem.requirements << 'latexmk'
-  gem.add_development_dependency 'devtools',       '~> 0.1.x'
+  gem.add_development_dependency 'devtools',       '~> 0.1.18'
   gem.add_development_dependency 'guard',          '~> 2.14'
   gem.add_development_dependency 'guard-bundler',  '~> 2.1'
   gem.add_development_dependency 'guard-rspec',    '~> 4.7', '>= 4.7.3'
-  gem.add_development_dependency 'guard-rubocop',  '~> 1.2'
+  gem.add_development_dependency 'guard-rubocop',  '~> 1.3'
 end
