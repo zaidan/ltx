@@ -51,7 +51,7 @@ module LTX
 
     def fetch_main(mainfile = DEFAULT_MAIN_TEX)
       main = File.absolute_path(fetch('main', 0, mainfile))
-      raise Error, MISSING_MAIN_ERROR unless File.exist?(main)
+      raise RuntimeError, MISSING_MAIN_ERROR unless File.exist?(main)
       main
     end
 
