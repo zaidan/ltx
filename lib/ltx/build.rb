@@ -71,7 +71,7 @@ module LTX
         '-pdf',
         '-e',
         "$pdflatex='pdflatex -synctex=1 -interaction=batchmode %O %S'",
-        File.join(@config.compile_dir, @config.main)
+        @config.main
       ]
     end
 
@@ -80,7 +80,7 @@ module LTX
         '-pdfdvi',
         '-e',
         "$latex='latex -synctex=1 -interaction=batchmode %O %S'",
-        File.join(@config.compile_dir, @config.main)
+        @config.main
       ]
     end
 
@@ -89,7 +89,7 @@ module LTX
         '-xelatex',
         '-e',
         "$pdflatex='xelatex -synctex=1 -interaction=batchmode %O %S'",
-        File.join(@config.compile_dir, @config.main)
+        @config.main
       ]
     end
 
@@ -98,7 +98,7 @@ module LTX
         '-pdf',
         '-e',
         "$pdflatex='lualatex -synctex=1 -interaction=batchmode %O %S'",
-        File.join(@config.compile_dir, @config.main)
+        @config.main
       ]
     end
   end
